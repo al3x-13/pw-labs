@@ -6,16 +6,10 @@
 		<meta name="author" content="Alexandre Marques">
 		<meta name="description" content="Website sobre Singapura">
 		<meta name="keywords" content="palavras chave">
-		<style>
-			table, td {
-				border: 1px solid black;
-				border-collapse: collapse;
-			}
-
-			td {
-				padding: 5px;
-			}
-		</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
 	</head>
 
 	<body>
@@ -32,6 +26,9 @@
 			<p>Abaixo podemos encontrar uma tabela com algumas informações sobre a cidade.</p>
 
 			<table>
+				<tr>
+					<th colspan="2" style="text-align: center;">Informação</td>
+				</tr>
 				<tr>
 					<td><b>Capital</b></td>
 					<td>Singapura</td>
@@ -57,24 +54,23 @@
 					<td>Dólar de Singapura (SGD)</td>
 				</tr>
 				<tr>
-					<td><b>Fuso Horário</b></td>
+					<td rowspan="2"><b>Fuso Horário</b></td>
 					<td>UTC+8</td>
 				</tr>
 			</table>
 		</main>
 
 		<nav>
-			<a href="index.html"><b>Introdução</b></a>
-			<a href="local.html">Localização</a>
-			<a href="multimedia.html">Multimedia</a>
-			<a href="info.html">Informação</a>
-			<a href="quizz.html">Quizz</a>
+			🏠<a href="index.html">Introdução</a>
+			🗺️<a href="local.html">Localização</a>
+			🎞️<a href="multimedia.html">Multimedia</a>
+			📰<a href="info.html"><b>Informação</b></a>
+			💭<a href="quizz.html">Quizz</a>
+			📄<a href="html5-css.html">HTML5 & CSS</a>
 		</nav>
 
-		<footer
-			style="margin-top: 20px"
-		>
-			Alexandre Marques (a22202130) - ULHT 2º ano
+		<footer>
+			<a href="https://github.com/C0NN3CT10N-L0ST" target="_blank">Alexandre Marques</a> (a22202130) - ULHT 2º ano
 		</footer>
 	</body>
 </html>

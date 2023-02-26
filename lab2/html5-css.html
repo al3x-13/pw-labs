@@ -6,6 +6,10 @@
 		<meta name="author" content="Alexandre Marques">
 		<meta name="description" content="Website sobre Singapura">
 		<meta name="keywords" content="palavras chave">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
 	</head>
 
 	<body>
@@ -20,78 +24,178 @@
 		<main>
 			<section>
 				<h3>HTML5 e CSS</h2>
-				<p>A República da Singapura é uma cidade, uma nação e um estado.</p>
+				<p>Esta página contém informações sobre HTML5 e CSS.</p>
 			</section>
 			
 			<section>
 				<h4>HTML5</h4>
-				<p>TODO</p>
+				<p><b>HTML (HyperText Markup Language)</b> é uma linguagem que permite definir a estrutura de uma página web.</p>
 
 				<table>
 					<tr>
+						<th>Elemento</th>
+						<th>Utilizado</th>
+						<th>Descrição</th>
+					</tr>
+
+					<tr>
 						<td>header</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<td class="used">✅</td>
+						<td>
+							Utilizado no início de cada uma das páginas para definir o cabeçalho que contém o conteúdo
+							introdutório da mesma.
+						</td>
 					</tr>
 
 					<tr>
 						<td>nav</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<td class="used">✅</td>
+						<td>
+							Utilizado em cada uma das páginas para representar uma secção de links de navegação.
+						</td>
 					</tr>
 
 					<tr>
 						<td>main</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<td class="used">✅</td>
+						<td>
+							Utilizado em todas as páginas para definir o conteúdo principal das mesmas.
+						</td>
 					</tr>
 
 					<tr>
 						<td>aside</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<td class="used">❌</td>
+						<td>
+							-
+						</td>
 					</tr>
 
 					<tr>
 						<td>footer</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<td class="used">✅</td>
+						<td>
+							Utilizado em todas as páginas para definir o autor.
+						</td>
 					</tr>
 
 					<tr>
 						<td>section</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<td class="used">✅</td>
+						<td>
+							Utilizado em algumas páginas para representar secções de informação e que contêm um 'heading'.
+						</td>
 					</tr>
 				</table>
 			</section>
 
 			<section>
 				<h4>CSS</h4>
-				<p>CSS (Cascading Style Sheets) é uma linguagem que permite estilizar componentes HTML numa página web.</p>
+				<p><b>CSS (Cascading Style Sheets)</b> é uma linguagem que permite estilizar componentes HTML numa página web.</p>
 
 				<table>
 					<tr>
-						<td>section</td>
-						<td>✅❌</td>
-						<td>TODO</td>
+						<th>Tipo de Seletor</th>
+						<th>Utilizado</th>
+						<th>Descrição</th>
+					</tr>
+
+					<tr>
+						<td>universal</td>
+						<td class="used">✅</td>
+						<td>Utilizado para alterar a fonte em todos os elementos.</td>
+					</tr>
+					
+					<tr>
+						<td>tipo</td>
+						<td class="used">✅</td>
+						<td>Utilizado para aplicar a cor de fundo em todas as páginas através do elemento 'body'.</td>
+					</tr>
+					
+					<tr>
+						<td>classe</td>
+						<td class="used">✅</td>
+						<td>Utilizado para centrar os ícones desta table.</td>
+					</tr>
+
+					<tr>
+						<td>id</td>
+						<td class="used">✅</td>
+						<td>Utilizado para alterar o tamanho da fonte do texto da introdução.</td>
+					</tr>
+
+					<tr>
+						<td>atributo</td>
+						<td class="used">✅</td>
+						<td>Utilizado para alterar a cor do atributo '_blank' das hiperligações.</td>
+					</tr>
+
+					<tr>
+						<td>pseudo-classe</td>
+						<td class="used">✅</td>
+						<td>Utilizado para alterar o estado das âncoras.</td>
+					</tr>
+
+					<tr>
+						<td>pseudo-elemento</td>
+						<td class="used">✅</td>
+						<td>Utilizado para alterar o tamaho da primeira letra do texto da introdução.</td>
+					</tr>
+				</table>
+				
+				<br>
+
+				<table>
+					<tr>
+						<th>Combinador de Seletor</th>
+						<th>Utilizado</th>
+						<th>Descrição</th>
+					</tr>
+
+					<tr>
+						<td>descendente</td>
+						<td class="used">✅</td>
+						<td>Utilizado para colocar todos as perguntas ('p' dentro de 'div') do quizz a negrito.</td>
+					</tr>
+					
+					<tr>
+						<td>filho</td>
+						<td class="used">✅</td>
+						<td>Utilizado para alterar o elemento 'legend' dentro do elemento 'fieldset'.</td>
+					</tr>
+					
+					<tr>
+						<td>adjacente</td>
+						<td class="used">❌</td>
+						<td>-</td>
+					</tr>
+
+					<tr>
+						<td>imediatamente adjacente</td>
+						<td class="used">❌</td>
+						<td>-</td>
+					</tr>
+
+					<tr>
+						<td>agrupar</td>
+						<td class="used">✅</td>
+						<td>Utilizado para aplicar bordas nos elementos 'table', 'th' e 'td'.</td>
 					</tr>
 				</table>
 			</section>
 		</main>
 
 		<nav>
-			<a href="index.html"><b>Introdução</b></a>
-			<a href="local.html">Localização</a>
-			<a href="multimedia.html">Multimedia</a>
-			<a href="info.html">Informação</a>
-			<a href="quizz.html">Quizz</a>
+			🏠<a href="index.html">Introdução</a>
+			🗺️<a href="local.html">Localização</a>
+			🎞️<a href="multimedia.html">Multimedia</a>
+			📰<a href="info.html">Informação</a>
+			💭<a href="quizz.html">Quizz</a>
+			📄<a href="html5-css.html"><b>HTML5 & CSS</b></a>
 		</nav>
 
-		<footer
-			style="margin-top: 20px"
-		>
-			Alexandre Marques (a22202130) - ULHT 2º ano
+		<footer>
+			<a href="https://github.com/C0NN3CT10N-L0ST" target="_blank">Alexandre Marques</a> (a22202130) - ULHT 2º ano
 		</footer>
 	</body>
 </html>

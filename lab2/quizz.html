@@ -6,6 +6,10 @@
 		<meta name="author" content="Alexandre Marques">
 		<meta name="description" content="Website sobre Singapura">
 		<meta name="keywords" content="palavras chave">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
 	</head>
 	
 	<body>
@@ -23,21 +27,109 @@
 				Nesta página podemos encontrar um Quizz que pretende testar o conhecimento do utilizador sobra a cidade de Singapura.
 			</p>
 
-			<form method="post" action="mailto:alexandreromba@hotmail.com" enctype="multipart/form-data">
+			<form method="post" action="mailto:a22202130@alunos.ulht.pt" enctype="multipart/form-data">
 				<fieldset>
 					<legend>Quizz sobre Singapura</legend>
 				</fieldset>
 
 				<fieldset>
 					<legend>Info</legend>
-					<p>Nome: <input type="text" name="name"></p>
-					<p>Apelido: <input type="text" name="surname"></p>
-					<p>Email: <input type="text" name="email"></p>
+					<p>Nome: <input type="text" name="name" placeholder="Primeiro nome" autocomplete="on" required autofocus></p>
+					<p>Apelido: <input type="text" name="surname" placeholder="Último nome" autocomplete="on" required></p>
+					<p>Email: <input type="text" name="email" placeholder="email@example.com" autocomplete="on" required></p>
 				</fieldset>
 
 				<fieldset>
 					<legend>Perguntas</legend>
+					
+					<div>
+						<p>Qual é a língua nacional de Singapura?</p>
+						<input type="text" id="officiallang" name="officiallang" maxlength="20" size="20" required>
+					</div>
+					
+					<div>
+						<p>Em que continente se situa Singapura?</p>
 
+						<div>
+							<input type="radio" id="europe" name="continent" value="europe"> 
+							<label for="europe">Europa</label>
+						</div>
+						
+						<div>
+							<input type="radio" id="america" name="continent" value="america">
+							<label for="america">América</label>
+						</div>
+						
+						<div>
+							<input type="radio" id="africa" name="continent" value="america">
+							<label for="africa">África</label>
+						</div>
+						
+						<div>
+							<input type="radio" id="asia" name="continent" value="asia">
+							<label for="asia">Ásia</label>
+						</div>
+						
+						<div>
+							<input type="radio" id="oceania" name="continent" value="oceania">
+							<label for="oceania">Oceania</label>
+						</div>
+					</div>
+					
+					<div>
+						<p>Das seguintes afirmações, selecione aquelas que são verdadeiras?</p>
+						
+						<div>
+							<input type="checkbox" id="statement1" name="statement1">
+							<label for="statement1">Singapura é uma ilha</label>
+						</div>
+						
+						<div>
+							<input type="checkbox" id="statement2" name="statement2">
+							<label for="statement2">A cidade de Singapura pertence à Malásia</label>
+						</div>
+						
+						<div>
+							<input type="checkbox" id="statement3" name="statement3">
+							<label for="statement3">Singapura é uma ex-colónia do Reino Unido</label>
+						</div>
+						
+						<div>
+							<input type="checkbox" id="statement4" name="statement4">
+							<label for="statement4">O indonésio é uma das línguas oficiais de Singapura</label>
+						</div>
+					</div>
+					
+					<div>
+						<p>Introduza a data de fundação de Singapura</p>
+						<input type="date" id="foundation" name="foundation" required>
+					</div>
+					
+					<div>
+						<p>Seleciona a cor que faz parte da bandeira de Singapura para além da cor vermelha?</p>
+						<input type="color" id="flagcolor" name="flagcolor">
+					</div>
+					
+					<div>
+						<p>Selecione a quantidade de estrelas da bandeira de Singapura (1-5).</p>
+						<input type="number" id="starnumber" name="starnumber" min="1" max="5" value="1">
+					</div>
+					
+					<div>
+						<p>Quantos milhões de habitantes tem Singapura?</p>
+						<label for="population">Milhões de habitantes (1-10)</label>
+						<input type="range" id="population" name="population" min="1" max="10" value="5">
+					</div>
+					
+					<div>
+						<p>Qual a moeda oficial de Singapura?</p>
+						<select name="currency" id="currency">
+							<option value="">USD</option>
+							<option value="">SGD</option>
+							<option value="">CAD</option>
+							<option value="">AUD</option>
+						</select>	
+					</div>
 				</fieldset>
 
 				<fieldset>
@@ -50,17 +142,16 @@
 		</main>
 		
 		<nav>
-			<a href="index.html"><b>Introdução</b></a>
-			<a href="local.html">Localização</a>
-			<a href="multimedia.html">Multimedia</a>
-			<a href="info.html">Informação</a>
-			<a href="quizz.html">Quizz</a>
+			🏠<a href="index.html">Introdução</a>
+			🗺️<a href="local.html">Localização</a>
+			🎞️<a href="multimedia.html">Multimedia</a>
+			📰<a href="info.html">Informação</a>
+			💭<a href="quizz.html"><b>Quizz</b></a>
+			📄<a href="html5-css.html">HTML5 & CSS</a>
 		</nav>
 
-		<footer
-			style="margin-top: 20px"
-		>
-			Alexandre Marques (a22202130) - ULHT 2º ano
+		<footer>
+			<a href="https://github.com/C0NN3CT10N-L0ST" target="_blank">Alexandre Marques</a> (a22202130) - ULHT 2º ano
 		</footer>
 	</body>
 </html>

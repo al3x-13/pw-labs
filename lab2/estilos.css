@@ -1,0 +1,90 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #212121;
+    color: #d4d4d8;
+}
+
+header, h1, h2, h3 {
+    color: white;
+}
+
+table, th, td {
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 6px;
+}
+
+.used {
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    background-color: #303030;
+    border-width: 2px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+fieldset > legend {
+    font-weight: bold;
+}
+
+a:link {
+    color: aqua;
+}
+
+a:hover {
+    color: cyan;
+}
+
+a:visited {
+    color: mediumpurple;
+}
+
+a:active {
+    color: grey;
+}
+
+#intro {
+    font-size: large;
+}
+
+#intro::first-letter {
+    font-size: xx-large;
+}
+
+[target="_blank"] {
+    color: green;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: small;
+    color: grey;
+}
+
+iframe {
+    background-color: #303030;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+}
+
+div p {
+    font-weight: bold;
+}
