@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Alexandre Marques">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -12,30 +12,31 @@
 	
 	<body>
 		<header>
-			<h1><span class="material-symbols-outlined" style="font-size: 1.5rem;">rocket_launch</span>Space</h1>
+			<a href="/"><h1><span class="material-symbols-outlined" style="font-size: 1.5rem;">rocket_launch</span>Space</h1></a>
 
 			<nav>
-				<a href="#top">Home</a>
+				<a href="#top">Início</a>
 				<a href="#mars">Marte</a>
 				<a href="#capitals">Capitais</a>
 				<a href="#planets">Planetas</a>
+				<a href="/grid1.html">Grid</a>
 			</nav>
 		</header>
 
-		<div id="space-div" id="top">
+		<div class="space-div" id="top">
 			<p><span class="material-symbols-outlined" style="font-size: 5.5rem;">rocket_launch</span>Space</p>
 		</div>
 
-		<div id="mars-div" id="mars">
-			<img src="https://source.unsplash.com/lH1VONHniMo/1600x1200" alt="Imagem de Marte" id="mars-img">
+		<div class="mars-div" id="mars">
+			<img src="https://source.unsplash.com/lH1VONHniMo/1600x1200" alt="Imagem de Marte">
 			<p id="mars-header">Marte</p>
 		</div>
 
-		<div class="middle-header">
+		<div class="middle-header" id="capitals">
 			<p>Capitais</p>
 		</div>
 
-		<div class="capitais" id="capitals">
+		<div class="capitais">
 			<div>
 				<div><img src="images/lisboa.avif" alt="Lisboa"></div>
 				<div><p>Lisboa</p></div>
@@ -121,5 +122,9 @@
 				</div>
 			</div>
 		</div>
+
+		<footer class="footer-index">
+			<a href="https://github.com/C0NN3CT10N-L0ST/pw-labs" target="_blank">Alexandre Marques</a>(a22202130) - ULHT 2º ano
+		</footer>
 	</body>
 </html>
